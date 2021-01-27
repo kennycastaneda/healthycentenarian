@@ -1,23 +1,41 @@
 body {
-  background-image: url("./images/fruits.jpg");
-  background-color: rgba(253, 208, 5, 0.76);
+  background-image: none;
+  background-color: rgba(256, 256, 256);
   background-size: 100%;
 }
 main {
-  margin-top: 60px;
+  margin-top: 0px;
+  margin-left: 0px;
   color: #fff;
+  width: 100%;
+}
+hr {
+  border: 0px;
 }
 
 main h1 {
-  margin: 0 10px;
+  background-image: url("./images/fruitandveggie.jpg");
+  padding-left: 0px;
+  background-size: 100%;
+  margin: 10px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 65px;
   color: #fff;
+  border-radius: 20px;
+}
+.fruits {
+  background-image: url("./images/fruits.jpg");
+  background-color: none;
+  background-size: 100%;
+  margin: 10px;
+  border-radius: 20px;
+}
+@media all and (min-width: 800px) {
 }
 
 main h2 {
-  margin: 18px 0 12px 0;
+  margin: 0;
   padding-bottom: 5px;
   border-bottom: 1px solid rgb(252, 252, 252);
   font-family: "Roboto", serif;
@@ -45,8 +63,16 @@ ul {
   color: #fff;
 }
 
-.group img {
-  width: 100%;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 60px; /* Height of the footer */
+}
+footer h3 {
+  border-bottom: 0px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.25);
 }
 
 .group {
@@ -54,24 +80,60 @@ ul {
   flex-direction: column;
   margin-bottom: 100px;
 }
+.group img {
+  width: 100%;
+  justify-content: center;
+}
 
 .item {
   flex: 1;
   margin: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 .item-double {
-  flex: 2;
-  margin: 10px;
+  flex: 3;
+  margin: 0px;
+  padding: 10px;
 }
 
+iframe {
+  margin: 10px;
+}
 @media all and (min-width: 800px) {
   section,
   h1 {
     padding: 0 10%;
   }
 
+  body {
+    background-image: url("./images/fruitandveggie.jpg");
+    background-size: 100%;
+    width: 80%;
+    margin: auto;
+  }
+  main h1 {
+    background-image: none;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  main {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  hr {
+    border: 1px solid;
+    border-color: white;
+  }
+  .fruits {
+    background-image: none;
+  }
   .group {
+    width: 70%;
+    margin: auto;
     flex-direction: row;
+    justify-content: flex-end;
   }
 }
