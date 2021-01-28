@@ -87,6 +87,12 @@ footer h3 {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.25);
 }
+div a {
+  border-bottom: 0px;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(256, 256, 256, 0.85);
+}
 
 .group {
   display: flex;
@@ -125,7 +131,13 @@ iframe {
     background: none;
     border-radius: 0;
   }
-
+  h3 {
+    text-align: center;
+  }
+  li {
+    text-decoration: underline;
+    text-align: center;
+  }
   main {
     color: white;
     background-color: rgba(0, 0, 0, 0.1);
