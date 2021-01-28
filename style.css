@@ -183,13 +183,14 @@ form label {
 form textarea {
   height: 160px;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 form button {
   margin-left: 20px;
+  background-color: white;
 }
 @media all and (min-width: 800px) {
-  form label,
-  form textarea {
+  form label {
     color: white;
   }
   .black-text {
