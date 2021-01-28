@@ -22,13 +22,13 @@ main h1 {
   /*background-image: url("./images/fruitandveggie.jpg");*/
   padding-left: 0px;
   background-size: 100%;
-  margin: 0 5px;
+  margin: 5px 5px;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 65px;
   color: rgba(256, 256, 256, 0.8);
 
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 .center {
   text-align: center;
@@ -45,15 +45,11 @@ main h2 {
   margin: 0 5px;
   padding: 5px 0 5px;
   border-bottom: 1px solid rgb(252, 252, 252);
-  background: /* top, transparent black */ linear-gradient(
-      rgba(55, 55, 55, 0.5),
-      rgba(55, 55, 55, 0)
-    ),
-    url("./images/fruitandveggie.jpg");
+  background: white;
   font-family: "Roboto", serif;
   font-size: 20px;
-  color: #fff;
-  border-radius: 0px 0 10px 10px;
+  color: black;
+  border-radius: 10px;
 }
 main h3 {
   margin: 18px 0 12px 10px;
@@ -97,7 +93,7 @@ div a {
 .group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 
 .item {
@@ -130,6 +126,7 @@ iframe {
   main h2 {
     background: none;
     border-radius: 0;
+    color: white;
   }
   h3 {
     text-align: center;
@@ -160,7 +157,7 @@ iframe {
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
 }
 
