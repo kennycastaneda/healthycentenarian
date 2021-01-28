@@ -151,3 +151,48 @@ iframe {
     justify-content: flex-end;
   }
 }
+
+.group-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 100px;
+}
+.item-form {
+  flex: 0 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.black-text {
+  color: black;
+}
+form {
+  margin: auto;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+form input,
+form textarea,
+form label {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+form textarea {
+  height: 160px;
+  font-family: "Roboto", sans-serif;
+}
+form button {
+  margin-left: 20px;
+}
+@media all and (min-width: 800px) {
+  form label,
+  form textarea {
+    color: white;
+  }
+  .black-text {
+    color: white;
+  }
+}
