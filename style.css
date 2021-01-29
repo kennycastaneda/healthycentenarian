@@ -245,11 +245,11 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 .item-form {
   flex: 0 100%;
-  margin: auto;
+  margin: auto 1px;
   padding: 10px;
 }
 
@@ -265,7 +265,7 @@ form input,
 form textarea,
 form label {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1px;
   font-family: "Roboto", sans-serif;
 }
 
