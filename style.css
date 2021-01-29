@@ -141,7 +141,7 @@ main div {
   margin: auto;
 }
 main h3 {
-  margin-top: 18px;
+  margin: 18px 18px;
   border-bottom: 0px solid #eee;
   font-family: "Roboto";
   font-size: 18px;
@@ -156,7 +156,7 @@ main p {
   padding-bottom: 5px;
 }
 ul {
-  margin: auto;
+  margin: 18px 18px;
   width: 80%;
 }
 ul li {
