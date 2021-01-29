@@ -34,16 +34,16 @@ header h1 {
   text-align: center;
 }
 .fruits {
-  background-image: url("./images/fruits.jpg");
+  background-image: linear-gradient(rgba(5, 5, 5, 0.1), rgba(5, 5, 5, 0.1)),
+    url("./images/fruits.jpg");
   background-color: none;
-  background-size: 100%;
+  background-size: cover;
   margin: 5px;
   border-radius: 10px;
 }
 
 header h2 {
-  margin: 0 5px;
-  padding: 5px 0 5px;
+  margin: 20px 0 0 0;
   border-bottom: 0px solid rgb(252, 252, 252);
   background: white;
   font-family: "Roboto", serif;
@@ -60,7 +60,7 @@ header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
-  margin-left: 20px;
+  margin: 5px 20px;
   justify-content: space-between;
   width: 100%;
 }
@@ -90,7 +90,7 @@ header nav ul li:last-child a {
     flex-flow: row;
     /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
        left and right. */
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   header h1 {
     background-image: none;
@@ -198,7 +198,7 @@ iframe {
 @media all and (min-width: 800px) {
   body {
     background-image: url("./images/fruitandveggie.jpg");
-    background-size: 120%;
+    background-size: cover;
     width: 80%;
     margin: auto;
   }
@@ -212,7 +212,7 @@ iframe {
   }
   main {
     color: white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
   }
   hr {
     border: 1px solid white;
