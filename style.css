@@ -61,6 +61,7 @@ header nav ul {
   padding-left: 0;
   list-style: none;
   margin-left: 20px;
+  text-align: center;
 }
 
 header nav ul li a {
@@ -151,8 +152,10 @@ main h3 {
 
 main p {
   font-family: "Roboto", sans-serif;
-  margin-top: 0;
+  margin: auto;
   color: #fff;
+  width: 80%;
+  padding-bottom: 5px;
 }
 
 ul {
