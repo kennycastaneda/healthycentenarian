@@ -61,25 +61,22 @@ header nav ul {
   padding-left: 0;
   list-style: none;
   margin-left: 20px;
-  text-align: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header nav ul li a {
   color: black;
   text-decoration: none;
   margin-right: 10px;
+  text-align: center;
 }
 header nav ul li:last-child a {
   /* Removes the margin to the right of the last anchor tag 
      so that the nav appears centered. */
   margin-right: 0;
 }
-header nav ul li a:hover {
-  /* Targets the change when a user holds the pointer over the anchor tag 
-     (link) within the list items within the unordered list that 
-     is within the navigation that is within the header. */
-  color: #bdbdbd;
-}
+
 @media all and (min-width: 600px) {
   /*header large screen*/
   header {
@@ -88,7 +85,7 @@ header nav ul li a:hover {
     /* Pushes the items (the title and nav) to the far sides of the 
        browser with space between them. */
 
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-flow: row;
     /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
        left and right. */
@@ -129,21 +126,22 @@ header nav ul li a:hover {
   }
   header nav ul {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   header nav ul li a {
-    align-self: flex-end;
+    flex: 0;
     margin-top: 5px;
     padding: 5px;
     color: white;
     text-decoration: transparent;
   }
 }
-
+main div {
+  margin: auto;
+}
 main h3 {
-  margin: 18px 0 12px 10px;
+  margin-top: 18px;
   border-bottom: 0px solid #eee;
   font-family: "Roboto";
   font-size: 18px;
@@ -157,18 +155,22 @@ main p {
   width: 80%;
   padding-bottom: 5px;
 }
-
 ul {
+  margin: auto;
+  width: 80%;
+}
+ul li {
   list-style: none;
   font-family: "Roboto", sans-serif;
   margin-top: 10px;
+  text-align: left;
   color: #fff;
 }
 
 footer {
   position: relative;
   bottom: 0;
-  width: 70%;
+  width: 80%;
   height: 60px; /* Height of the footer */
 }
 footer h3 {
@@ -191,12 +193,6 @@ div a {
 
 .item {
   flex: 1;
-  margin: 10px;
-  padding: 10px;
-}
-
-.item-double {
-  flex: 3;
   margin: 10px;
   padding: 10px;
 }
