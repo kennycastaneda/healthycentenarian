@@ -43,13 +43,16 @@ header h1 {
 }
 
 header h2 {
-  margin: 20px 0 0 0;
+  margin: auto;
+  padding-left: 4px;
+  padding-right: 4px;
   border-bottom: 0px solid rgb(252, 252, 252);
   background: white;
-  font-family: "Roboto", serif;
-  font-size: 20px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 1.2rem;
   color: black;
-  text-decoration: black underline;
+  text-decoration: none underline;
+  font-weight: lighter;
   border-radius: 10px;
 }
 header nav {
